@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<efcore context-namespace="Assetz" namespace="Assetz" p1:Guid="4095b66b-646f-45c8-abf7-09d49d3f92be" xmlns:p1="http://devart.com/schemas/EntityDeveloper/1.0">
+  <class name="Asset" entity-set="Assets" p1:Guid="64c913a7-85d1-4135-8082-5b2a662a100a">
+    <id name="Id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="3d79e82e-426d-4ddb-8ff4-2fada4616f43">
+      <column name="" />
+    </id>
+    <property name="Name" type="String" p1:ValidateRequired="true" p1:Guid="36466603-ec38-4ebe-8b6c-dc1ae96d7866">
+      <column name="" />
+    </property>
+    <property name="Description" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="1166b73e-38ce-4253-a293-b04776c0b776">
+      <column name="" />
+    </property>
+    <property name="UsefulLifespan" type="Int32" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="14d07ec9-39f0-4e4c-9b6e-4c27e740f7ca">
+      <column name="" />
+    </property>
+    <property name="Code" type="String" p1:ValidateRequired="true" p1:Guid="546ef810-c260-436d-9793-81c7fda9aff4">
+      <column name="" />
+    </property>
+    <property name="DigitalCode" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="e6147d9b-76e3-430b-9bc7-5cceb29117e3">
+      <column name="" />
+    </property>
+    <property name="PurchaseDate" type="DateTimeOffset" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="01c454e0-a33c-4c49-bc44-b054838472fa">
+      <column name="" />
+    </property>
+    <property name="PurchasePrice" type="Decimal" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="2e939512-7044-4d01-a83a-4c9f4459a62f">
+      <column name="" />
+    </property>
+    <property name="SalvageValue" type="Decimal" p1:ValidateRequired="true" p1:Guid="cae841c7-7c5f-437c-ab42-daa9c706fedd">
+      <column name="" />
+    </property>
+    <property name="Image" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="4bebdd87-517a-494b-b037-522847fbcadf">
+      <column name="" />
+    </property>
+    <property name="AssetTypeId" type="Int32" p1:ValidateRequired="true" p1:Guid="eda1467b-6ee0-48c3-8cbf-d3288109764e">
+      <column name="" not-null="False" />
+    </property>
+    <property name="AccountId" type="Int32" p1:ValidateRequired="true" p1:Guid="15a659d1-f0cc-4e7d-b991-5737439633c5">
+      <column name="" not-null="False" />
+    </property>
+    <property name="Longitude" type="Decimal" p1:ValidateRequired="true" p1:Guid="302413cf-f351-4934-a8c3-7234b06fcc4a">
+      <column name="" />
+    </property>
+    <property name="Latitude" type="Decimal" p1:ValidateRequired="true" p1:Guid="32d4158d-5571-450a-8727-97d7dd588163">
+      <column name="" />
+    </property>
+  </class>
+  <class name="AssetType" entity-set="AssetTypes" p1:Guid="c6169d14-222f-4bc7-b425-3f63d6a8174e">
+    <id name="Id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="ad775dd6-e838-4587-bbaf-701e010cdaeb">
+      <column name="" />
+    </id>
+    <property name="Name" type="String" p1:ValidateRequired="true" p1:Guid="8fc6cf2a-85a0-479b-8fcf-a86b2a163db0">
+      <column name="" />
+    </property>
+    <property name="Description" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="bd67d2dd-fd67-43ec-8fbb-f6ed18768d0e">
+      <column name="" />
+    </property>
+    <property name="Code" type="String" p1:ValidateRequired="true" p1:Guid="4f834839-3af0-4e85-8a56-c3392b253495">
+      <column name="" />
+    </property>
+    <property name="Image" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="024c617e-96fc-4795-bb46-c824df657e2b">
+      <column name="" />
+    </property>
+  </class>
+  <class name="VerificationEntry" entity-set="VerificationEntries" p1:Guid="be677b0e-c984-4a33-9ef4-9c636f110af4">
+    <id name="Id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="cabff863-9f6c-413c-8da1-779893159924">
+      <column name="" />
+    </id>
+    <property name="DateVerified" type="DateTimeOffset" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="01f0df4a-fa91-487e-8bb2-12700e58cc85">
+      <column name="" />
+    </property>
+    <property name="DigitalCode" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="56682c80-6289-4afb-baf0-c4a4552a5933">
+      <column name="" />
+    </property>
+    <property name="Image" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="9a70b786-4567-40b3-aa5a-50b5a24e001a">
+      <column name="" />
+    </property>
+    <property name="IsManualVerification" type="Boolean" p1:ValidateRequired="true" p1:Guid="d5c6cad5-5c71-4499-8156-970f1a716352">
+      <column name="" />
+    </property>
+    <property name="AssetId" type="Int32" p1:ValidateRequired="true" p1:Guid="5bb98ea3-e53d-47c6-b3d8-f3c54cb5bab0">
+      <column name="" not-null="False" />
+    </property>
+  </class>
+  <class name="Account" entity-set="Accounts" p1:Guid="a7a5c5a7-dd87-4154-8ad7-b0855c1d48a7">
+    <id name="Id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="843812c8-547f-4a73-bf40-57b749d4f6e3">
+      <column name="" />
+    </id>
+    <property name="IsActivated" type="Boolean" p1:ValidateRequired="true" p1:Guid="415dcbc5-0019-4c46-8a3e-c7eb93361989">
+      <column name="" />
+    </property>
+    <property name="IsOpen" type="Boolean" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="8c92262a-1388-4244-87a9-c7661a4f9a79">
+      <column name="" />
+    </property>
+    <property name="ActivationDate" type="DateTimeOffset" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="77e0bb99-2078-48f6-88a7-7870085f3e7f">
+      <column name="" />
+    </property>
+    <property name="ActivationCode" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="00516735-3755-4f25-95aa-beb1729c4a9d">
+      <column name="" />
+    </property>
+    <property name="BillingPlanExpiryDate" type="DateTimeOffset" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="26532436-f926-454a-aaa3-4085d0c9ba17">
+      <column name="" />
+    </property>
+  </class>
+  <class name="User" entity-set="Users" p1:Guid="b01cff84-5ac7-48e9-8de1-4effa39ad191">
+    <id name="Id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="baaca0c3-831f-4cfe-9ea9-66fb03584d51">
+      <column name="" />
+    </id>
+    <property name="FirstName" type="String" p1:ValidateRequired="true" p1:Guid="6313bb5b-2949-4fbd-896c-16a0fedeb625">
+      <column name="" />
+    </property>
+    <property name="LastName" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="ea09c906-4711-4924-bc76-ec03885f48e5">
+      <column name="" />
+    </property>
+    <property name="Role" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="3afe8d34-69a3-48d4-998c-d0a8ddde466b">
+      <column name="" />
+    </property>
+    <property name="Email" type="String" p1:ValidateRequired="true" p1:Guid="eb3e4ef0-551b-4eac-b14d-8e783bd79423">
+      <column name="" />
+    </property>
+    <property name="PasswordSalt" type="String" p1:ValidateRequired="true" p1:Guid="8ac7f74d-8d0a-414f-bac4-82aa2c664694">
+      <column name="" />
+    </property>
+    <property name="AccountId" type="Int32" p1:ValidateRequired="true" p1:Guid="ff138ce0-fd5f-4905-871f-e962167114bd">
+      <column name="" not-null="False" />
+    </property>
+  </class>
+  <associations>
+    <association name="AssetType_Asset" cardinality="OneToMany" on-delete="Restrict" p1:Guid="b1002afe-220a-43b2-af40-edf07e2bec56">
+      <end1 multiplicity="One" name="AssetType" class="Asset" relation-class="AssetType" constrained="True" lazy="False" p1:inheritance-modifier="None" p1:Guid="8bcf3eaa-3974-4da6-a4e2-2daef1c7b42d">
+        <property name="Id" />
+      </end1>
+      <end2 multiplicity="Many" name="Assets" class="AssetType" relation-class="Asset" lazy="False" p1:inheritance-modifier="None" p1:Guid="873ed7c5-f471-4715-864c-227281129b5f">
+        <property name="AssetTypeId" />
+      </end2>
+    </association>
+    <association name="Account_Asset" cardinality="OneToMany" on-delete="Cascade" p1:Guid="c6ce3186-7b1d-443c-81e4-36ab1a993024">
+      <end1 multiplicity="One" name="Account" class="Asset" relation-class="Account" constrained="True" lazy="False" p1:inheritance-modifier="None" p1:Guid="cfeb6655-d8a5-4a14-804f-925286d471c0">
+        <property name="Id" />
+      </end1>
+      <end2 multiplicity="Many" name="Assets" class="Account" relation-class="Asset" lazy="False" p1:inheritance-modifier="None" p1:Guid="5a5a97bb-6e93-4b1d-8b4f-b456c3c23033">
+        <property name="AccountId" />
+      </end2>
+    </association>
+    <association name="Account_User" cardinality="OneToMany" on-delete="Cascade" p1:Guid="3bc40247-f213-451f-a4aa-af4d26c900ad">
+      <end1 multiplicity="One" name="Account" class="User" relation-class="Account" constrained="True" lazy="False" p1:inheritance-modifier="None" p1:Guid="a1d284d1-9cd7-4bd6-9b15-d7267444ac6d">
+        <property name="Id" />
+      </end1>
+      <end2 multiplicity="Many" name="Users" class="Account" relation-class="User" lazy="False" p1:inheritance-modifier="None" p1:Guid="8caea786-6fab-4570-a3bc-0434a1366533">
+        <property name="AccountId" />
+      </end2>
+    </association>
+    <association name="Asset_VerificationEntry" cardinality="OneToMany" on-delete="Cascade" p1:Guid="8f23f6ef-167b-4662-9db5-9bdfb9993f20">
+      <end1 multiplicity="One" name="Asset" class="VerificationEntry" relation-class="Asset" constrained="True" lazy="False" p1:inheritance-modifier="None" p1:Guid="1dfe9d25-581a-4c1a-aba0-403025e18611">
+        <property name="Id" />
+      </end1>
+      <end2 multiplicity="Many" name="VerificationEntries" class="Asset" relation-class="VerificationEntry" lazy="False" p1:inheritance-modifier="None" p1:Guid="f7fb5017-abed-4ae3-8ca9-65c6ab275957">
+        <property name="AssetId" />
+      </end2>
+    </association>
+  </associations>
+</efcore>
