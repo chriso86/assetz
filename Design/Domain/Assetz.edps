@@ -2,7 +2,50 @@
 <EntityDeveloper Version="6.6.936.0">
   <ModelSettings xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" ConnectionStringInAppConfig="False" DetectManyToManyAssociations="False" DetectTPTInheritance="False" EntityFrameworkCoreVersion="Version3" DetectFunctionBasedColumnDefault="True">
     <Connection ConnectionString="Data Source=.;Initial Catalog=Assetz;Integrated Security=True;Persist Security Info=True" Provider="System.Data.SqlClient" />
-    <Generation />
+    <Generation>
+      <GeneratedFiles>
+        <File Name="Assetz.AssetzModel.cs" />
+        <File Name="Assetz.Asset.cs" />
+        <File Name="Assetz.AssetType.cs" />
+        <File Name="Assetz.VerificationEntry.cs" />
+        <File Name="Assetz.Account.cs" />
+        <File Name="Assetz.User.cs" />
+        <File Name="IUnitOfWork.cs" />
+        <File Name="IUnitOfWorkFactory.cs" />
+        <File Name="IRepository.cs" />
+        <File Name="IAssetRepository.cs" OverwriteMode="None" />
+        <File Name="IAssetRepository.Generated.cs" />
+        <File Name="IAssetTypeRepository.cs" OverwriteMode="None" />
+        <File Name="IAssetTypeRepository.Generated.cs" />
+        <File Name="IVerificationEntryRepository.cs" OverwriteMode="None" />
+        <File Name="IVerificationEntryRepository.Generated.cs" />
+        <File Name="IAccountRepository.cs" OverwriteMode="None" />
+        <File Name="IAccountRepository.Generated.cs" />
+        <File Name="IUserRepository.cs" OverwriteMode="None" />
+        <File Name="IUserRepository.Generated.cs" />
+        <File Name="EntityFrameworkRepository.cs" />
+        <File Name="EntityFrameworkUnitOfWork.cs" />
+        <File Name="EntityFrameworkUnitOfWorkFactory.cs" />
+        <File Name="Assetz.AssetRepository.cs" OverwriteMode="None" />
+        <File Name="Assetz.AssetRepository.Generated.cs" />
+        <File Name="Assetz.AssetTypeRepository.cs" OverwriteMode="None" />
+        <File Name="Assetz.AssetTypeRepository.Generated.cs" />
+        <File Name="Assetz.VerificationEntryRepository.cs" OverwriteMode="None" />
+        <File Name="Assetz.VerificationEntryRepository.Generated.cs" />
+        <File Name="Assetz.AccountRepository.cs" OverwriteMode="None" />
+        <File Name="Assetz.AccountRepository.Generated.cs" />
+        <File Name="Assetz.UserRepository.cs" OverwriteMode="None" />
+        <File Name="Assetz.UserRepository.Generated.cs" />
+        <File Name="Assetz.DTOs.cs" />
+        <File Name="Assetz.Converters.cs" />
+        <File Name="AssetzModelController.cs" />
+        <File Name="AssetsController.cs" OverwriteMode="None" />
+        <File Name="AssetTypesController.cs" OverwriteMode="None" />
+        <File Name="VerificationEntriesController.cs" OverwriteMode="None" />
+        <File Name="AccountsController.cs" OverwriteMode="None" />
+        <File Name="UsersController.cs" OverwriteMode="None" />
+      </GeneratedFiles>
+    </Generation>
     <DatabaseFirstNamingRules>
       <EntitySet PluralizationName="Pluralize" />
       <Class UseSchemaAsPrefix="False" PluralizeCollectionNavigationPropertyName="True" AddConstraintColumnsToNavigationPropertyName="False" RemoveUnderscores="True" AddUnderscores="False" RemoveInvalidCharacters="True" CodeCase="FirstLetterUppercase" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Singularize" />
